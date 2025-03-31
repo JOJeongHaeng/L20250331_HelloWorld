@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// 이건 오류
+
 int main()
 {
     int num1 = 1;
