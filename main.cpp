@@ -25,8 +25,8 @@ int main()
     PlayerInfo* PlayerData;
     PlayerData = new PlayerInfo;
 
-    PlayerData->X = 5;
-    PlayerData->Y = 5;
+    PlayerData->X = 10;
+    PlayerData->Y = 10;
     PlayerData->Shape = "P";
 
     bool IsRunning = true;
@@ -47,8 +47,10 @@ int main()
                 }
             }
         }
+
         GotoXY(PlayerData->X, PlayerData->Y);
         cout << PlayerData->Shape;
+
         input = _getch();
         if (input == 77 || toupper(input) == 'D') {  //¿À¸¥ÂÊ
             PlayerData->X += 1;
